@@ -24,7 +24,7 @@
 - git:
     repo: 'https://github.com/zeromq/libzmq.git'
     dest: /tmp/libzmq
-    version: 2d83acceffdef71c62c936487db9478b5478a00c
+    version: eff190d5031d313451505f323d3dd1c38ab9c25c
 - shell: |
     cd /tmp/libzmq
     ./autogen.sh

@@ -23,104 +23,104 @@
 
 - git:
     repo: 'https://github.com/zeromq/libzmq.git'
-    dest: /tmp/libzmq
+    dest: /opt/libzmq
     version: eff190d5031d313451505f323d3dd1c38ab9c25c
 - shell: |
-    cd /tmp/libzmq
+    cd /opt/libzmq
     ./autogen.sh
     ./configure --prefix=/usr
-- make: chdir=/tmp/libzmq target=install
-- file: state=absent path=/tmp/lubzmq
+- make: chdir=/opt/libzmq target=install
+- file: state=absent path=/opt/lubzmq
 
 - git:
     repo: 'https://github.com/libbitcoin/libbitcoin.git'
-    dest: /tmp/libbitcoin
+    dest: /opt/libbitcoin
     version: ddf19b34aac222a834177830de485a665b152a6a
 - shell: |
-    cd /tmp/libbitcoin
+    cd /opt/libbitcoin
     ./autogen.sh
     ./configure --prefix=/usr
-- make: chdir=/tmp/libbitcoin target=install
-- file: state=absent path=/tmp/libbitcoin
+- make: chdir=/opt/libbitcoin target=install
+- file: state=absent path=/opt/libbitcoin
 
 - git:
     repo: 'https://github.com/libbitcoin/libbitcoin-protocol.git'
-    dest: /tmp/libbitcoin-protocol
+    dest: /opt/libbitcoin-protocol
     version: 57ebd9c32233a76f83038b7655b4a4f8e862bac5
 - shell: |
-    cd /tmp/libbitcoin-protocol
+    cd /opt/libbitcoin-protocol
     ./autogen.sh
     ./configure --prefix=/usr
-- make: chdir=/tmp/libbitcoin-protocol target=install
-- file: state=absent path=/tmp/libbitcoin-protocol
+- make: chdir=/opt/libbitcoin-protocol target=install
+- file: state=absent path=/opt/libbitcoin-protocol
 
 - git:
     repo: 'https://github.com/libbitcoin/libbitcoin-network.git'
-    dest: /tmp/libbitcoin-network
+    dest: /opt/libbitcoin-network
     version: 1e79325d063f4efbbdc1551b2a2cffcf0babb501
 - shell: |
-    cd /tmp/libbitcoin-network
+    cd /opt/libbitcoin-network
     ./autogen.sh
     ./configure --prefix=/usr
-- make: chdir=/tmp/libbitcoin-network target=install
-- file: state=absent path=/tmp/libbitcoin-network
+- make: chdir=/opt/libbitcoin-network target=install
+- file: state=absent path=/opt/libbitcoin-network
 
 - git:
     repo: 'https://github.com/libbitcoin/libbitcoin-client.git'
-    dest: /tmp/libbitcoin-client
+    dest: /opt/libbitcoin-client
     version: de8a7b2232d29e28e47454392dfad9bca532735b
 - shell: |
-    cd /tmp/libbitcoin-client
+    cd /opt/libbitcoin-client
     ./autogen.sh
     ./configure --prefix=/usr
-- make: chdir=/tmp/libbitcoin-client target=install
-- file: state=absent path=/tmp/libbitcoin-client
+- make: chdir=/opt/libbitcoin-client target=install
+- file: state=absent path=/opt/libbitcoin-client
 
 - git:
     repo: 'https://github.com/libbitcoin/libbitcoin-explorer.git'
-    dest: /tmp/libbitcoin-explorer
+    dest: /opt/libbitcoin-explorer
     version: 231323a5886c2ebf9d33011b8b2c3d49a9af6d52
 - shell: |
-    cd /tmp/libbitcoin-explorer
+    cd /opt/libbitcoin-explorer
     ./autogen.sh
     ./configure --prefix=/usr
-- make: chdir=/tmp/libbitcoin-explorer target=install
-- file: state=absent path=/tmp/libbitcoin-explorer
+- make: chdir=/opt/libbitcoin-explorer target=install
+- file: state=absent path=/opt/libbitcoin-explorer
 
 - git:
     repo: 'https://github.com/prusnak/bip32utils.git'
-    dest: /tmp/bip32utils
+    dest: /opt/bip32utils
     version: dd9c541767a2a8ff60c7868c9f4b03277fabb8ba
 - shell: |
-    cd /tmp/bip32utils
+    cd /opt/bip32utils
     git verify-commit dd9c541767a2a8ff60c7868c9f4b03277fabb8ba
     python setup.py install
-- file: state=absent path=/tmp/bib32utils
+- file: state=absent path=/opt/bib32utils
 
 - git:
     repo: 'https://github.com/trezor/python-mnemonic.git'
-    dest: /tmp/python-mnemonic
+    dest: /opt/python-mnemonic
     version: bd441b693271a07ee0ce51f89d3141457785b108
 - shell: |
-    cd /tmp/python-mnemonic
+    cd /opt/python-mnemonic
     git verify-commit dd9c541767a2a8ff60c7868c9f4b03277fabb8ba
     python setup.py install
-- file: state=absent path=/tmp/python-mnemonic
+- file: state=absent path=/opt/python-mnemonic
 
 - git:
     repo: 'https://github.com/richardkiss/pycoin.git'
-    dest: /tmp/pycoin
+    dest: /opt/pycoin
     version: 39a5f47f21f5f31c68c147dc173d9b2751c3213a
 - shell: |
-    cd /tmp/pycoin
+    cd /opt/pycoin
     python setup.py install
-- file: state=absent path=/tmp/pycoin
+- file: state=absent path=/opt/pycoin
 
 - git:
     repo: 'https://github.com/Legrandin/pycryptodome.git'
-    dest: /tmp/pycryptodome
+    dest: /opt/pycryptodome
     version: 2e0f288809bd68a46f881865b0a60f9c54c4751f
 - shell: |
-    cd /tmp/pycryptodome
+    cd /opt/pycryptodome
     python setup.py install
-- file: state=absent path=/tmp/pycryptodome
+- file: state=absent path=/opt/pycryptodome

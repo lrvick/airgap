@@ -88,16 +88,6 @@
 - file: state=absent path=/opt/libbitcoin-explorer
 
 - git:
-    repo: 'https://github.com/prusnak/bip32utils.git'
-    dest: /opt/bip32utils
-    version: dd9c541767a2a8ff60c7868c9f4b03277fabb8ba
-- shell: |
-    cd /opt/bip32utils
-    git verify-commit dd9c541767a2a8ff60c7868c9f4b03277fabb8ba
-    python setup.py install
-- file: state=absent path=/opt/bib32utils
-
-- git:
     repo: 'https://github.com/trezor/python-mnemonic.git'
     dest: /opt/python-mnemonic
     version: bd441b693271a07ee0ce51f89d3141457785b108

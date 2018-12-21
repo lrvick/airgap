@@ -12,7 +12,6 @@
 
 ## Cryptocurrency
 - [gen-hdwallet]: Simple script to export a bip44 wallet as jsony
-- [bip32-utils]: Generate/manage BIP32 cryptocurrency wallets
 - [bx]: Bitcoin tools for signing transactions, managing keys, etc.
 - [electrum]: Utilities for popular bitcoin wallet format
 
@@ -183,7 +182,6 @@
 [qrencode]: https://packages.qa.debian.org/q/qrencode.html
 [gen-hdwallet]: https://github.com/lrvick/airgap/blob/master/scripts/gen-hdwallet
 [gen-gpgchain]: https://github.com/lrvick/airgap/blob/master/scripts/gen-gpgchain
-[bip32-utils]: https://pypi.python.org/pypi/bip32utils/0.3-1
 [paperkey]: http://www.jabberwocky.com/software/paperkey/
 [pass]: https://www.passwordstore.org/
 [pwman3]: http://pwman3.github.io/pwman3/
